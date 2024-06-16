@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>Page Title</title>
+    <title>Hanna Huynh's Portfolio</title>
 </head>
 <body>
 <body>
