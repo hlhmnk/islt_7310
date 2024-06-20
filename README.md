@@ -1,36 +1,40 @@
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
+    <link rel="stylesheet" href="style.css">
     <header>
-        <h1>About Me</h1>
+        <h1>Welcome to My Portfolio Website</h1>
     </header>
 
     <!-- Main Content Section -->
     <main>
-        <h2>About Me</h2>
-        <p> Hello! My name is Hanna Huynh. I currently work at Mizzou for the Trulaske College of Business as a <em>Graduate Assistant</em> in the Graduate Programs Office. 
-        </p>
-        <h3>Education Overview</h3>
+        <h2>About This Website</h2>
         <p>
-            I recently graduated from the University of Missouri fall class of 2023 with a <em>BSBA in Marketing</em> alongside a minor in Entrepreneurship and Innovation. 
-            I am now currently pursuing a Master’s degree in Business Administration and Graduate Certificate in Marketing Analytics.
+            Welcome to my portfolio website. This website is designed to provide detailed information about my skills and experience. The primary purpose of this website is to serve as a comprehensive resource for anyone interested in my goals, objectives, and progress.
         </p>
-        <blockquote>
-        "The flower that blooms in adversity is the most rare and beautiful of all.” - Fa Zhou
-        </blockquote>
-        
+        <p>
+            The objectives of this website are to:
+            <ul>
+                <li>Provide up-to-date information about my experience.</li>
+                <li>Share insights and updates on my past projects.</li>
+                <li>Facilitate contact and networking opportunities with potential employers, collaborators, and clients.</li>
+                <li>Reflect on my personal and professional growth through a dedicated section.</li>
+            </ul>
+        </p>
     </main>
-<h3>Skills</h3>
-<p>
-  I have expertise in <strong>Canva</strong>, Photoshop, and various Microsoft Applications. 
-  I am also proficient in using marketing analtyic platforms such as Tableau.
-  <footer>
-    <p>Hanna Huynh | hlhtennis@gmail.com</p>
-    <p>&copy; 2024 Hanna Huynh. All rights reserved.</p>
-</footer>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Hanna Huynh | hlhtennis@gmail.com</p>
+        <p>&copy; 2024 Hanna Huynh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
