@@ -9,7 +9,6 @@
 </head>
 <body>
     <!-- Header Section -->
-    <link rel="stylesheet" href="style.css">
     <header>
         <h1>Welcome to My Portfolio Website</h1>
     </header>
