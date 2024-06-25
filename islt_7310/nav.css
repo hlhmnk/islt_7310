@@ -14,6 +14,14 @@ nav ul li {
     float: left; /* Align list items horizontally */
 }
 
+/* Additional styling in nav.css */
+nav ul li {
+    margin: 5px; /* Space between items */
+    padding: 5px; /* Space inside items */
+    border: 1px solid #fff; /* Border around items */
+    display: inline-block; /* Ensure items are inline-block */
+}
+
 nav ul li a {
     display: block;
     color: white; /* Text color */
