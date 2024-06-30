@@ -1,4 +1,31 @@
-/* style.css */
-h1 {
-    color: #0000FF; /* Blue */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+p + p::first-line {
+    text-indent: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
 }
