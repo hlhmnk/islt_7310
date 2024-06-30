@@ -7,22 +7,26 @@ h1, h2 {
     color: #333;
 }
 
-p::first-letter {
+/* Apply first-letter styling only to paragraphs inside the section */
+section p::first-letter {
     font-size: 1.5em;
     font-weight: bold;
     color: #000;
 }
 
-p + p::first-line {
+/* Indent the first line of all paragraphs except the first */
+section p + p::first-line {
     text-indent: 20px;
 }
 
+/* Styling for the section containing the reflection content */
 section {
     padding: 20px;
     margin: 20px;
     background-color: #f9f9f9;
 }
 
+/* Styling for the footer */
 footer {
     text-align: center;
     padding: 10px;
