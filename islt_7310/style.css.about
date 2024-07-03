@@ -1,150 +1,30 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    line-height: 1.6;
 }
 
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-header nav ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-header .contact-button {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
+h1, h2 {
     color: #333;
-    border: none;
-    cursor: pointer;
 }
 
-/* Main Content */
-main {
-    flex: 1;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.about-me, .photo, .experience {
-    margin-bottom: 2rem;
+/* Indent the first line of all paragraphs except the first */
+section p + p::first-line {
+    text-indent: 20px;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+/* Styling for the section containing the reflection content */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
 }
 
-.photo {
-    text-align: center;
-}
-
-.photo img {
-    max-width: 100%;
-    height: auto;
-}
-
-.separator {
-    border: none;
-    border-top: 2px solid #333;
-    margin: 2rem 0;
-}
-
-.experience h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.jobs {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.jobs .job {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.jobs .job img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-/* Footer */
+/* Styling for the footer */
 footer {
+    text-align: center;
+    padding: 10px;
     background-color: #333;
     color: #fff;
-    padding: 1rem;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-content ul {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-}
-
-.footer-content ul li {
-    cursor: pointer;
-}
-
-.footer-content .social-media {
-    display: flex;
-    gap: 1rem;
-}
-
-.footer-content .contact-footer {
-    padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    cursor: pointer;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-    .jobs {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
