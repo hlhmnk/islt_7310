@@ -5,52 +5,147 @@
     box-sizing: border-box;
 }
 
-/* Layout */
 body {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
-    text-align: center;
+    background-color: #f8f8f8;
 }
 
-nav ul {
-    list-style: none;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
     display: flex;
-    justify-content: center;
+    list-style: none;
     gap: 1rem;
 }
 
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .contact-button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main Content */
 main {
     flex: 1;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-footer {
-    background-color: #f8f8f8;
-    padding: 1rem;
-    text-align: center;
+.about-me, .photo, .experience {
+    margin-bottom: 2rem;
 }
 
 /* Flexbox and Grid */
-.about-me, .credentials {
-    margin-bottom: 2rem;
+.about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.photo {
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.experience h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.jobs .job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.jobs .job img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.footer-content ul li {
+    cursor: pointer;
+}
+
+.footer-content .social-media {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-content .contact-footer {
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
 }
 
 /* Media Queries */
 @media (min-width: 768px) {
     main {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .about-me, .credentials {
+    .about-me, .photo, .experience {
         width: 48%;
+    }
+
+    .jobs {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
