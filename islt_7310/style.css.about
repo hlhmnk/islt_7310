@@ -18,7 +18,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #f8f8f8;
+    background-color: #333;
+    color: white;
 }
 
 header .logo {
@@ -34,13 +35,13 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 header .contact-button {
     padding: 0.5rem 1rem;
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     border: none;
     cursor: pointer;
 }
@@ -52,13 +53,14 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .about-me, .photo, .experience {
     margin-bottom: 2rem;
 }
 
-/* Flexbox and Grid */
 .about-me {
     display: flex;
     flex-direction: column;
@@ -142,15 +144,6 @@ footer {
 
 /* Media Queries */
 @media (min-width: 768px) {
-    main {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .about-me, .photo, .experience {
-        width: 48%;
-    }
-
     .jobs {
         grid-template-columns: repeat(3, 1fr);
     }
