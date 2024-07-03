@@ -1,0 +1,56 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Flexbox and Grid */
+.about-me, .credentials {
+    margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-me, .credentials {
+        width: 48%;
+    }
+}
