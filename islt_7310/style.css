@@ -7,13 +7,6 @@ h1, h2 {
     color: #333;
 }
 
-/* Apply first-letter styling only to paragraphs inside the section */
-section p::first-letter {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #000;
-}
-
 /* Indent the first line of all paragraphs except the first */
 section p + p::first-line {
     text-indent: 20px;
