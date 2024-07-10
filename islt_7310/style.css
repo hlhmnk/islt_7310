@@ -13,6 +13,13 @@ header {
     text-align: center;
 }
 
+/* Styling for the section containing the reflection content */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
 }
