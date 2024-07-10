@@ -1,28 +1,92 @@
+/* General styles for screen */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-/* Indent the first line of all paragraphs except the first */
-section p + p::first-line {
-    text-indent: 20px;
-}
-
-/* Styling for the section containing the reflection content */
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #f9f9f9;
-}
-
-/* Styling for the footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
+header {
+    background: #333;
     color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+ul, ol {
+    padding-left: 1.5em;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 1em 0;
+    padding: 0.5em;
+    border-left: 0.25em solid #ccc;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Print-specific styles */
+@media print {
+    h1, p, ul, ol, blockquote, footer {
+        color: black; /* Make all font black */
+        font-family: serif; /* Use a serif font */
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif; /* Ensure the custom font is used for printing */
+    }
+
+    body {
+        margin: 1in; /* Adjust printable margins to be 1" on all sides */
+    }
+
+    footer {
+        display: block;
+    }
+
+    footer img, footer svg {
+        display: none; /* Hide logos or icons */
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    p {
+        font-size: 12pt;
+    }
+
+    ul, ol {
+        font-size: 12pt;
+    }
+
+    blockquote {
+        font-size: 14pt;
+        margin: 0.5in 0;
+    }
+
+    footer {
+        font-size: 10pt;
+    }
 }
