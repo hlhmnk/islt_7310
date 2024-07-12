@@ -83,6 +83,14 @@ footer img {
   margin-right: 10px;
 }
 
+/* Icon styling */
+footer img {
+  vertical-align: middle; /* Align the icon with the text */
+  margin-right: 10px;     /* Space between icon and text */
+  width: 24px;            /* Set a fixed width */
+  height: 24px;           /* Set a fixed height */
+}
+
 
 /* Print-specific styles */
 @media print {
