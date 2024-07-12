@@ -91,6 +91,17 @@ footer img {
   height: 24px;           /* Set a fixed height */
 }
 
+/* Add this to your style.css file */
+
+/* Style for footer icons */
+.footer-icon {
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
 
 /* Print-specific styles */
 @media print {
