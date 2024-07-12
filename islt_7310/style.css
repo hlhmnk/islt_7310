@@ -70,6 +70,15 @@ footer .social-icons a {
     background-size: contain;
 }
 
+footer {
+  background-image: url('images/footer-background.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+}
+
+
 /* Print-specific styles */
 @media print {
     h1, p, ul, ol, blockquote, footer {
