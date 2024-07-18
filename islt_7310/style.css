@@ -5,169 +5,151 @@
     box-sizing: border-box;
 }
 
-/* General styles for screen */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: #fff;
+    background-color: #333;
 }
 
 header, footer {
-    background: #333;
+    background: #000;
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-}
-
-main {
-    flex: 1; /* Allows the main content to grow and push the footer down */
-    padding: 1em;
-}
-
-section {
-    margin-bottom: 1.5em;
-}
-
-ul, ol {
-    padding-left: 1.5em;
-}
-
-blockquote {
-    font-style: italic;
-    margin: 1em 0;
-    padding: 0.5em;
-    border-left: 0.25em solid #ccc;
-}
-
-img {
-    display: block;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-footer nav ul {
+header .logo {
+    font-size: 1.5em;
+}
+
+header ul {
     list-style: none;
-    padding: 0;
-}
-
-footer nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-footer .social-icons a {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    background: url('path-to-social-icon.png') no-repeat center center;
-    background-size: contain;
-}
-
-footer {
-  background-image: url('../images/footer-background.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  color: white;
-}
-
-footer img {
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-/* Icon styling */
-.footer-icon {
-  transition: transform 0.3s ease;
-}
-
-.footer-icon:hover {
-  transform: scale(1.2);
-}
-
-/* Form styles */
-form {
     display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: auto;
+    gap: 1em;
 }
 
-label {
-    margin-top: 10px;
+header ul li {
+    position: relative;
 }
 
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 1px solid #fff;
 }
 
-input[type="submit"] {
-    margin-top: 20px;
-    padding: 10px;
+header ul li a:hover, header ul li a.active {
+    background-color: #fff;
+    color: #333;
+}
+
+header .contact-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
+    padding: 0.5em 1em;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+header .contact-btn:hover {
     background-color: #45a049;
 }
 
-@media (max-width: 600px) {
-    form {
-        width: 100%;
-        padding: 0 10px;
-    }
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #444;
 }
 
-/* Print-specific styles */
-@media print {
-    h1, p, ul, ol, blockquote, footer {
-        color: black; /* Make all font black */
-        font-family: serif; /* Use a serif font */
-    }
+section {
+    margin-bottom: 2em;
+}
 
-    h1 {
-        font-family: 'Roboto', sans-serif; /* Ensure the custom font is used for printing */
-    }
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
 
-    body {
-        margin: 1in; /* Adjust printable margins to be 1" on all sides */
-    }
+section p, section ul {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
 
-    footer {
-        display: block;
-    }
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
 
-    footer img, footer svg {
-        display: none; /* Hide logos or icons */
-    }
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
 
-    h1 {
-        font-size: 24pt;
-    }
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+}
 
-    p {
-        font-size: 12pt;
-    }
+footer nav ul li {
+    margin: 0 1em;
+}
 
-    ul, ol {
-        font-size: 12pt;
-    }
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: 1px solid #fff;
+}
 
-    blockquote {
-        font-size: 14pt;
-        margin: 0.5in 0;
-    }
+footer nav ul li a:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
 
-    footer {
-        font-size: 10pt;
-    }
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+footer .social-icons .social-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5em;
 }
