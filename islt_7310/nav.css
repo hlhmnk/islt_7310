@@ -1,3 +1,4 @@
+/* Original nav styles */
 nav {
     background-color: #333; /* Background color of the nav bar */
 }
@@ -55,4 +56,40 @@ nav ul li ul li a {
 
 nav ul li a:hover {
     background-color: #111; /* Change background on hover */
+}
+
+/* New dropdown styles */
+header ul li {
+    position: relative;
+}
+
+header ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #fff;
+}
+
+header ul li .dropdown li {
+    margin: 0;
+}
+
+header ul li .dropdown li a {
+    color: #fff;
+    padding: 0.5em 1em;
+    display: block;
+}
+
+header ul li .dropdown li a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+header ul li:hover .dropdown {
+    display: block;
 }
