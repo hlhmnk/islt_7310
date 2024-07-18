@@ -1,4 +1,3 @@
-/* nav.css */
 nav {
     background-color: #333; /* Background color of the nav bar */
 }
@@ -6,10 +5,8 @@ nav {
 nav ul {
     list-style-type: none; /* Remove bullets */
     margin: 0;
-    list-style-type: none;
     padding: 0;
     overflow: hidden; /* Ensure no overflow issues */
-    margin: 0;
     background-color: #333;
 }
 
@@ -17,14 +14,11 @@ nav ul li {
     float: left; /* Align list items horizontally */
     display: inline;
     position: relative;
-}
-
-/* Additional styling in nav.css */
-nav ul li {
     margin: 5px; /* Space between items */
     padding: 5px; /* Space inside items */
     border: 1px solid #fff; /* Border around items */
-    display: inline-block; /* Ensure items are inline-block */
+}
+
 nav ul li a {
     display: inline-block;
     color: white;
@@ -33,7 +27,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a {
 nav ul li ul {
     display: none;
     position: absolute;
@@ -51,14 +44,15 @@ nav ul li:hover ul {
 
 nav ul li ul li {
     display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 16px;
     color: white; /* Text color */
     text-align: center;
-    padding: 14px 20px;
     text-decoration: none; /* Remove underline from links */
 }
 
 nav ul li a:hover {
     background-color: #111; /* Change background on hover */
-nav ul li ul li a {
-    padding: 10px 16px;
 }
