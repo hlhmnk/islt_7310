@@ -57,7 +57,7 @@ header ul li a:hover, header ul li a.active {
 }
 
 header .contact-btn {
-    background-color: #4CAF50;
+    background-color: #b3f1ff;
     color: white;
     border: none;
     padding: 0.5em 1em;
@@ -96,7 +96,7 @@ section ul {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #b3f1ff;
     color: #fff;
     text-align: center;
     padding: 1em 0;
