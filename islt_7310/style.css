@@ -73,7 +73,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em;
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
 }
 
 section {
@@ -195,7 +195,7 @@ input[type="submit"]:hover {
 table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid black; /* Add border to table */
+    border: 1px solid #000; /* Add border to table */
 }
 
 thead {
@@ -215,7 +215,7 @@ thead tr, tbody tr:first-child, tbody tr:last-child {
 }
 
 th, td {
-    border: 1px solid black; /* Ensure all cells have a black border */
+    border: 1px solid #000; /* Ensure all cells have a black border */
     padding: 8px;
     text-align: left;
 }
